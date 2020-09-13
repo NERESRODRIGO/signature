@@ -9,5 +9,8 @@
     }else{
         
     }
-
+    <ul>
+    <li><button>Baixar Imagem</button></li>
+    <li><button>Baixar Html</button></li>
+    </ul>
 ?>
