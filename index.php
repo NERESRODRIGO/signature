@@ -9,17 +9,17 @@
                 <img class="logo" src="img/signature.png" width="150"/> 
                 <h3>SIGNATURE</h3>
                 <div class="label-float">
-                    <input type="text" placeholder=" "/>
+                    <input type="text" name="nome" placeholder=" "></input>
                     <label>Nome</label>
                 </div>
                 <br>
                 <div class="label-float">
-                    <input type="text" placeholder=" "/>
+                    <input type="text" name="cargo" placeholder=" "></input>
                     <label>Cargo</label>
                 </div>
                 <br>
                 <div class="label-float">
-                    <input type="text" placeholder=" "/>
+                    <input type="text" name="telefone" placeholder=" "></input>
                     <label>Telefone/Ramal</label>
                 </div>
                 <br>
@@ -28,7 +28,7 @@
                 
                     <input type="radio" id="html" name="escolha" value="html">Html</input><br>
                 -->
-                    <button type="submit">Gerar Assinatura</button>
+                    <button class="button" type="submit">Gerar Assinatura</button>
             </form>
         </div>
     </body>
