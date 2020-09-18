@@ -24,8 +24,11 @@
         //$text1 = imagettftext($image,20,0,410,181,$black,$font_path,"Secretaria - $secretaria");
         imagejpeg($image,$output);
 
-        ?>   
-        <img src="<?php echo $output; ?>" width="600">
+        ?>
+        <div>   
+            <img src="<?php echo $output; ?>" width="600"><br>
+            <a href="assinatura.jpg" download><button>Download</buton></a>
+        </div>
         <?php
 } elseif($escolha=='html'){?>
 <!-- Gerando html-->
