@@ -14,7 +14,7 @@
 
         $white = imagecolorallocate($image, 255, 255, 255);
         $black = imagecolorallocate($image, 0, 0, 0);
-        $font_path = dirname(__FILE__) . '/roboto/Roboto-Bold.ttf';
+        $font_path = dirname(__FILE__) . 'fonts/roboto/Roboto-Bold.ttf';
 
         $text1 = imagettftext($image,24,0,410,65,$black,$font_path,"$nome");
         $text1 = imagettftext($image,20,0,410,107,$black,$font_path,"$cargo");
