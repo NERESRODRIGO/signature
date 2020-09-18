@@ -24,10 +24,9 @@
                 </div>
                 <br>
                 
-                <!--    <input type="radio" id="imagem" name="escolha" value="imagem">Imagem</input>
+                <input type="radio" id="imagem" name="escolha" value="imagem">IMAGEM</input>
                 
-                    <input type="radio" id="html" name="escolha" value="html">Html</input><br>
-                -->
+                <input type="radio" id="html" name="escolha" value="html">HTML</input><br>
                     <button class="button" type="submit">Gerar Assinatura</button>
             </form>
         </div>

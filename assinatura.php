@@ -3,7 +3,10 @@
     $nome = $_POST['nome'];
     $cargo = $_POST['cargo'];
     $telefone = $_POST['telefone'];
+    $escolha = $_POST['escolha'];
 
+
+    if($escolha=='imagem'){
 // Gerando imagem
         $output = "assinatura.jpg";
 
@@ -16,20 +19,16 @@
         $text1 = imagettftext($image,24,0,410,65,$black,$font_path,"$nome");
         $text1 = imagettftext($image,20,0,410,107,$black,$font_path,"$cargo");
         $text1 = imagettftext($image,20,0,410,144,$black,$font_path,"$telefone");
-        $text1 = imagettftext($image,20,0,410,181,$black,$font_path,"Prefeitura Municipal de Registro");
+        $text1 = imagettftext($image,20,0,410,181,$black,$font_path,"Site da empresa aqui");
         //$text1 = imagettftext($image,20,0,410,181,$black,$font_path,"Ramal - $ramal");
         //$text1 = imagettftext($image,20,0,410,181,$black,$font_path,"Secretaria - $secretaria");
         imagejpeg($image,$output);
 
-        ?>
-
-     <table>
-        <tr>
-            <td>   
-                <img src="<?php echo $output; ?>" width="600">
-            </td>
+        ?>   
+        <img src="<?php echo $output; ?>" width="600">
+        <?php
+} elseif($escolha=='html'){?>
 <!-- Gerando html-->
-            <td>
                 <style>
                     table tr td {
                         font-size: 20px;
@@ -39,7 +38,7 @@
                 <table>
                     <tr>
                         <td rowspan="5">
-                            <img src="http://www.registro.sp.gov.br/images/logo-registro-n.png" width="160">
+                            <img src="img/signature.png" width="100">
                         </td>
                     </tr>
                     <tr>
@@ -52,14 +51,11 @@
                         <td><?php echo $telefone; ?></td>
                     </tr>
                     <tr>
-                        <td><a href="http://www.registro.sp.gov.br/Default.asp">Prefeitura Municipal de Registro</a></td>
+                        <td><a href="https://www.google.com">Site da empresa aqui</a></td>
                     </tr>
                 </table>
-            </td>
-        </tr>
-        <tr>
-            <td><a href="assinatura.jpg" dowload="Minha Assinatura"><button>Baixar Imagem</button></a></td>
-            <td><a href="assinatura.html" dowload="Minha Assinatura"><button>Baixar Html</button></a></td>
-        </tr>
-    </table>
+                <?php }
+                ?>
+            <!--<td><a href="assinatura.jpg" dowload="Minha Assinatura"><button>Baixar Imagem</button></a></td>
+            <td><a href="assinatura.html" dowload="Minha Assinatura"><button>Baixar Html</button></a></td>-->
     
