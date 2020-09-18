@@ -10,7 +10,7 @@
 // Gerando imagem
         $output = "assinatura.jpg";
 
-        $image = imagecreatefromjpeg("assinatura1.jpg");
+        $image = imagecreatefromjpeg("img/molde.jpg");
 
         $white = imagecolorallocate($image, 255, 255, 255);
         $black = imagecolorallocate($image, 0, 0, 0);
