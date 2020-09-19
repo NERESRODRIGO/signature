@@ -7,6 +7,7 @@
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/bootstrap.bundle.js"></script>
+        <title>Gerador de assinatura de e-mails</title>
     </head>
 <?php
 
@@ -37,9 +38,9 @@
         ?>
         <div class="text-center">
             <h4>Sucesso! Sua nova assinatura é essa.</h4>   
-            <img src="<?php echo $output; ?>" width="600"><br>
+            <img class="img-fluid" src="<?php echo $output; ?>" width="600"><br>
             <p>Clique abaixo para fazer o Download</p>
-            <a class="btn btn-primary" href="assinatura.jpg" download>Download</a>
+            <a class="btn btn-primary" href="assinatura.jpg">Download</a>
         </div>
         <?php
 } elseif($options=='html'){?>
