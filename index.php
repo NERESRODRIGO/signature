@@ -4,7 +4,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
     </head>
     <body>
         <div class="container text-center">
@@ -27,8 +29,17 @@
                 </div>
                 <br>
                 <p>Formato:</p>
-                <div class="text-center">
-                    <div class="input-group mb-3">
+                <div class="btn-group text-center" data-toggle="buttons">
+                    <label class="btn btn-primary active">
+                        <input type="radio" id="imagem" name="options" id="option1" value="imagem" auto-complete="off" checked>IMAGEM
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" id="html" name="options" id="option2" value="html" auto-complete="off">HTML
+                    </label>    
+
+
+
+                    <!--<div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <div class="input-group-text">                
                                 <input type="radio" id="imagem" name="escolha" value="imagem" aria-label="IMAGEM">IMAGEM </input>
@@ -42,8 +53,8 @@
                             <input type="radio" id="html" name="escolha" value="html" aria-label="HTML"> HTML</input>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div>-->
+                </div><br>  
                     <button class="btn btn-danger" type="submit">Limpar tudo</button>
                     <button class="btn btn-primary" type="submit">Gerar Assinatura</button>
             </form>

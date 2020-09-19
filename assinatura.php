@@ -1,12 +1,22 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+    </head>
 <?php
 
     $nome = $_POST['nome'];
     $cargo = $_POST['cargo'];
     $telefone = $_POST['telefone'];
-    $escolha = $_POST['escolha'];
+    $options = $_POST['options'];
 
 
-    if($escolha=='imagem'){
+    if($options=='imagem'){
 // Gerando imagem
         $output = "assinatura.jpg";
 
@@ -25,13 +35,17 @@
         imagejpeg($image,$output);
 
         ?>
-        <div>   
+        <div class="text-center">
+            <h4>Sucesso! Sua nova assinatura é essa.</h4>   
             <img src="<?php echo $output; ?>" width="600"><br>
-            <a href="assinatura.jpg" download><button>Download</buton></a>
+            <p>Clique abaixo para fazer o Download</p>
+            <a class="btn btn-primary" href="assinatura.jpg" download>Download</a>
         </div>
         <?php
-} elseif($escolha=='html'){?>
+} elseif($options=='html'){?>
 <!-- Gerando html-->
+            <div class="text-center">
+            <h4>Sucesso! Sua nova assinatura é essa.</h4>  
                 <style>
                     table tr td {
                         font-size: 20px;
@@ -57,8 +71,9 @@
                         <td><a href="https://www.google.com">Site da empresa aqui</a></td>
                     </tr>
                 </table>
+                <p>Clique abaixo para fazer o Download</p>
+                    <a class="btn btn-primary" href="" download>Download</a>
+                </div>
                 <?php }
                 ?>
-            <!--<td><a href="assinatura.jpg" dowload="Minha Assinatura"><button>Baixar Imagem</button></a></td>
-            <td><a href="assinatura.html" dowload="Minha Assinatura"><button>Baixar Html</button></a></td>-->
-    
+</html>    
