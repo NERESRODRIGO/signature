@@ -56,7 +56,7 @@
                         </div>
                     </div>-->
                 </div><br>  
-                    <button class="btn btn-danger" type="submit">Limpar tudo</button>
+                    <button class="btn btn-danger" type="reset">Limpar tudo</button>
                     <button class="btn btn-primary" type="submit">Gerar Assinatura</button>
             </form>
         </div>
