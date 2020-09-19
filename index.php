@@ -7,6 +7,7 @@
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/bootstrap.bundle.js"></script>
+        <title>Gerador de assinatura de e-mails</title>
     </head>
     <body>
         <div class="container text-center">
